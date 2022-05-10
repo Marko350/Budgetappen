@@ -1,0 +1,55 @@
+.page-header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.page-header__inner {
+    text-align: center;
+}
+
+.page-header__title {
+    padding-bottom: 2rem;
+}
+
+.page-header__text {
+    padding-bottom: 1rem;
+}
+
+.page-header__column--2 {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .page-header__title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-header__text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .page-header__inner {
+        display: flex;
+    }
+
+    .page-header__title h1 {
+        font-size: 3.5rem;
+    }
+
+    .page-header__column {
+        width: 50%;
+        padding: 1.5rem;
+        text-align: initial;
+
+        img {
+            object-fit: contain;
+        }
+    }
+}
