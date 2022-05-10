@@ -18,8 +18,6 @@ const ExpenseForm = ( { data, close, collection, updateFunction } ) => {
         nameUpdateRef.current.value = "";
     }
 
-    console.log("This is data", data);
-
     return ( 
         <Form onSubmit={updateAmount}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
