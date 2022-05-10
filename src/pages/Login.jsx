@@ -25,7 +25,7 @@ const Login = () => {
     }
 
     return (
-        <Container style={{maxWidth: "1200px"}}>
+        <Container className="mt-5">
             { error && <Alert>{error}</Alert> }
 
             <Form onSubmit={handleSubmit}>
