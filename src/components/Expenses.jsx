@@ -72,7 +72,6 @@ const Expenses = () => {
             <Row className="pt-4">
                 <Col className="expenses-buttons">
                     <Button className="me-4" onClick={ addCategory } variant="primary">Add category</Button>
-                    <Button onClick={ () => window.location.reload(false) } variant="info">Get total expenses</Button>
                 </Col>
             </Row>}
             <h2 className="mt-4">Total expenses: 

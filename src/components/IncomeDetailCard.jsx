@@ -48,7 +48,7 @@ const IncomeDetailCard = ( { income } ) => {
             !update ?
             <>
             <Buttons id={income.id} name="Delete income" collectionName="income"/>
-            <Button onClick={updateClick} className="ms-4" variant="dark" type="submit">Change</Button>
+            <Button onClick={updateClick} className="ms-4" variant="secondary" type="submit">Change</Button>
             </> : null 
         }
         
