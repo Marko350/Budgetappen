@@ -1,9 +1,13 @@
 .user {
     height: 100%;
-    background: #000000a8;
+    background-image: url("https://www.kramfors.se/images/18.1fbd54a916b92d787f139735/1562846428218/Scandinav_OG17_(1).jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 2rem;
+   
 }
 
 .user__inner {
@@ -16,11 +20,13 @@
 .objective-numbers {
     display: flex;
     justify-content: flex-end;
+    color: black;
 }
 
 .card {
-    background: gray !important;
+    background: #212529 !important;
     height: 500px;
+    color: white;
 }
 
 .budget-card {

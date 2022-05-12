@@ -31,30 +31,32 @@ const Register = () => {
     }
 
     return (
-        <Container className="mt-5">
+        <div className='wrapper'>
+            <Container className="mt-5 register-form">
 
-            {error && <Alert>{error}</Alert>}
+                {error && <Alert>{error}</Alert>}
 
-            <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit}>
 
-                <Form.Group id="email" className="mb-3">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" ref={emailRef} required />
-                </Form.Group>
+                    <Form.Group id="email" className="mb-3">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="email" ref={emailRef} required />
+                    </Form.Group>
 
-                <Form.Group id="password" className="mb-3">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" ref={passwordRef} required />
-                </Form.Group>
+                    <Form.Group id="password" className="mb-3">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" ref={passwordRef} required />
+                    </Form.Group>
 
-                <Form.Group id="password" className="mb-3">
-                    <Form.Label>Password Confirmation</Form.Label>
-                    <Form.Control type="password" ref={passwordConfirmRef} required />
-                </Form.Group>
+                    <Form.Group id="password" className="mb-3">
+                        <Form.Label>Password Confirmation</Form.Label>
+                        <Form.Control type="password" ref={passwordConfirmRef} required />
+                    </Form.Group>
 
-                <Button disabled={loading} type="submit">Create Account</Button>
-            </Form>
-        </Container>
+                    <Button disabled={loading} type="submit">Create Account</Button>
+                </Form>
+            </Container>
+        </div>
     )
 }
 

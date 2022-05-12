@@ -25,29 +25,31 @@ const Login = () => {
     }
 
     return (
-        <Container className="mt-5">
-            { error && <Alert>{error}</Alert> }
+        <div className='wrapper'>
+            <Container className="mt-5 login-form">
+                { error && <Alert>{error}</Alert> }
 
-            <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit}>
 
-                <Form.Group id="email" className="mb-3">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" ref={emailRef} required />
-                </Form.Group>
+                    <Form.Group id="email" className="mb-3">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="email" ref={emailRef} required />
+                    </Form.Group>
 
-                <Form.Group id="password" className="mb-3">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" ref={passwordRef} required />
-                </Form.Group>
+                    <Form.Group id="password" className="mb-3">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" ref={passwordRef} required />
+                    </Form.Group>
 
-                <Button disabled={loading} type="submit">Log In</Button>
-            </Form>
+                    <Button disabled={loading} type="submit">Log In</Button>
+                </Form>
 
-            <div className="text-center mt-3">
-				<Link to="/forgot-password">Forgot Password?</Link>
-			</div>
+                <div className="text-center mt-3 forgot-password">
+                    <Link to="/forgot-password">Forgot Password?</Link>
+                </div>
 
-        </Container>
+            </Container>
+        </div>
     )
 }
 

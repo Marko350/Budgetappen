@@ -29,3 +29,31 @@ code {
 .btn {
   font-size: 0.7rem;
 }
+
+.register-form,
+.login-form {
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 2rem;
+  background-color: #212529;
+  transform: translateY(5rem);
+  margin-top: 0 !important;
+
+  & label {
+    color: white;
+  }
+
+  & button {
+    background: white;
+    color: black;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    
+  }
+}
+
+.forgot-password a {
+  color: white;
+  text-decoration: none;
+}

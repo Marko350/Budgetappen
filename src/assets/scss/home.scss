@@ -1,5 +1,5 @@
 .page-header {
-    margin-top: 3rem;
+    padding-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -13,6 +13,7 @@
 
 .page-header__text {
     padding-bottom: 1rem;
+    font-weight: 600;
 }
 
 .page-header__column--2 {
@@ -20,6 +21,13 @@
         height: 100%;
         width: 100%;
     }
+}
+
+.wrapper {
+    background-image: url("https://cdn.top5credits.com/se/wp-content/uploads/sites/3/2020/09/budget-768x451.jpg.webp");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
 
 @media only screen and (min-width: 768px) {
