@@ -33,7 +33,8 @@ const Income = () => {
                 )) }
                 </div>
                 <IncomeCard />
-                <h2 className="pt-4">Total income: 
+                <h2 className="pt-4">Total income:
+                    <br />
                     <span> { dataQuery.data ? totalIncome() : <BeatLoader color={"#fff"} size={20} /> }</span>
                 </h2>
             </Card>

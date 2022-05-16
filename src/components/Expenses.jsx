@@ -74,7 +74,8 @@ const Expenses = () => {
                     <Button className="me-4" onClick={ addCategory } variant="primary">Add category</Button>
                 </Col>
             </Row>}
-            <h2 className="mt-4">Total expenses: 
+            <h2 className="mt-4">Total expenses:
+                <br/> 
                 <span> { dataExpenseQuery.data ? totalExpenses() : <BeatLoader color={"#fff"} size={20} /> }</span>
             </h2>
     </Card>

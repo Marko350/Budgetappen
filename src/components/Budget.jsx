@@ -45,7 +45,8 @@ const Budget = () => {
 
     return ( 
         <Card className="p-3 mb-5 budget-card">
-            <h2>Budget:  
+            <h2>Budget:
+            <br />
             <span>
                 { incomeData.data && expensesData.data ? budget() :  <BeatLoader color={"#fff"} size={20} />}
             </span>
