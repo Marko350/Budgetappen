@@ -24,17 +24,17 @@ const ExpenseForm = ( { data, close, collection, updateFunction } ) => {
             { data ?
                 <>
                 <Row className="mt-4">
-                    <Col>
+                { data.name ? <Col>
                         <Form.Control type="text" ref={nameUpdateRef} placeholder={data.name} required />
-                    </Col>
-                    <Col>
+                    </Col> : null }
+                { data.amount  ? <Col>
                         <Form.Control type="number" ref={amountUpdateRef} placeholder={data.amount ? data.amount : "0,00 kr"} required />
-                    </Col>
+                    </Col> : null }
                 </Row>
                 <Button className="mt-4 me-4" variant="primary" type="submit">
                     Submit
                 </Button>
-                <Button onClick={close} className="mt-4" variant="danger" type="submit">
+                <Button onClick={ close } className="mt-4" variant="danger" type="submit">
                     Cancel
                 </Button>
                 </>

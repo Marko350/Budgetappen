@@ -44,9 +44,9 @@ const Login = () => {
                     <Button disabled={loading} type="submit">Log In</Button>
                 </Form>
 
-                <div className="text-center mt-3 forgot-password">
+                {/* <div className="text-center mt-3 forgot-password">
                     <Link to="/forgot-password">Forgot Password?</Link>
-                </div>
+                </div> */}
 
             </Container>
         </div>

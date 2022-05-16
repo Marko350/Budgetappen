@@ -20,10 +20,10 @@ const ExpensesCard = ( { data } ) => {
         setProduct(!product);
     }
 
-    const updateValue = (data, mutate, ref) => {
+    const updateValue = (data, mutate, ref, amount, timeStamp) => {
         mutate({
             created: data.created,
-            updated: serverTimestamp(),
+            updated: timeStamp(),
             name: ref.current.value,
             owner: data.owner,
         })
