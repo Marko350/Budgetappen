@@ -43,14 +43,14 @@ const Objective = () => {
             <Card className="p-3 card">
                 <h1 className="mb-4">Objective</h1>
                 <Accordion className="pb-4">
-                    { dataQuery.data && dataQuery.data.map((income, index) => (
+                    { dataQuery.data && dataQuery.data.map((objective, index) => (
                         <Accordion.Item key={index} eventKey={index++}>
-                            <Accordion.Header>{income.name}</Accordion.Header>
+                            <Accordion.Header>{objective.name}</Accordion.Header>
                             <Accordion.Body>
-                                <ProgressBar variant="primary" min={0} max={income.cost} now={income.depozit} label={`${totalProcent(income)}%`} />
+                                <ProgressBar variant="primary" min={0} max={objective.cost} now={objective.depozit} label={`${totalProcent(objective)}%`} />
                                 <div className="objective-numbers">
-                                    <span>{moneyTransition(income.depozit)} / </span>
-                                    <span>{moneyTransition(income.cost)}</span>
+                                    <span>{moneyTransition(objective.depozit)} / </span>
+                                    <span>{moneyTransition(objective.cost)}</span>
                                 </div>
 
                                 { amount ? 
@@ -58,12 +58,12 @@ const Objective = () => {
                                         Add amount
                                     </Button>
                                     : 
-                                    <UpdateForm data={income} close={handleClick} collection="objective" updateFunction={updateValue}  />
+                                    <UpdateForm data={objective} close={handleClick} collection="objective" updateFunction={updateValue}  />
                                 }
 
                                 <hr />
                                 <Col className="mt-4">
-                                    <Buttons id={ income.id } name="Delete objective" collectionName="objective" />
+                                    <Buttons id={ objective.id } name="Delete objective" collectionName="objective" />
                                 </Col>
                             </Accordion.Body>
                         </Accordion.Item>

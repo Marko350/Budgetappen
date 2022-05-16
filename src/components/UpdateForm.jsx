@@ -18,6 +18,8 @@ const ExpenseForm = ( { data, close, collection, updateFunction } ) => {
         nameUpdateRef.current.value = "";
     }
 
+    console.log("This is data", data)
+
     return ( 
         <Form onSubmit={updateAmount}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -27,7 +29,7 @@ const ExpenseForm = ( { data, close, collection, updateFunction } ) => {
                 { data.name ? <Col>
                         <Form.Control type="text" ref={nameUpdateRef} placeholder={data.name} required />
                     </Col> : null }
-                { data.amount  ? <Col>
+                { data.amount || data.depozit === 0 || data.depozit  ? <Col>
                         <Form.Control type="number" ref={amountUpdateRef} placeholder={data.amount ? data.amount : "0,00 kr"} required />
                     </Col> : null }
                 </Row>
